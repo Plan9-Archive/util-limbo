@@ -1,0 +1,13 @@
+<../../mkconfig
+
+TARG=\
+	testutil0.dis\
+
+SYSMODULES=\
+	sys.m\
+	string.m\
+	util0.m\
+
+DISBIN=$ROOT/dis
+
+<$ROOT/mkfiles/mkdis

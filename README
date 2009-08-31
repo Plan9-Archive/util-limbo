@@ -1,0 +1,50 @@
+# status
+
+don't use yet, util0.m is not yet final.
+
+
+# intro
+
+"util" is a library with various commonly used functions.  some are
+in other standard libraries (like string.m, lists.m), others are
+not.  this library was written because having to write these functions
+all the time (which is still faster than copy-pasting) is annoying.
+
+the modules are named with a numerical suffix, a version number.
+incompatible version of future libraries (e.g. with changed function
+definitions) will have a new number.  this ensures existing programs
+using this library will not have to be modified after such an
+interface change.
+
+note that there is currently no documentation for the functions
+(the code is documentation for now!).  the test program is useful
+too.
+
+
+# install
+
+to install, first make a file "mkconfig" similar to your inferno's
+installation mkconfig (symlink/bind it).  now type "mk install" to
+compile and install.
+
+when building from within inferno, insert SYSHOST=Inferno and ROOT=
+in the mk invocations to override the values in the mkconfig.
+
+
+# download
+
+get the latest version at
+
+	http://www.ueber.net/code/r/util
+
+
+# licence & author
+
+all files are in the public domain.  this code has been written by
+mechiel lukkien, reachable at mechiel@ueber.net or mechiel@xs4all.nl.
+
+
+# todo
+
+- implement qsort
+- add a bytepos, readline?  from sea-gull

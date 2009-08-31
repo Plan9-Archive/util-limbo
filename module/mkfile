@@ -1,0 +1,6 @@
+<../mkconfig
+
+MODS=\
+	util0.m\
+
+<mkmod
