@@ -152,7 +152,7 @@ readfd(fd: ref Sys->FD, max: int): array of byte
 		}
 		if(n == 0)
 			break;
-		if(len buf+n > max) {
+		if(max >= 0 && len buf+n > max) {
 			sys->werrstr(sprint("file too big"));
 			return nil;
 		}
