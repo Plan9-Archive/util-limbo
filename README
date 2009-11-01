@@ -1,6 +1,6 @@
 # status
 
-don't use yet, util0.m is not yet final.
+works.
 
 
 # intro
@@ -23,9 +23,8 @@ too.
 
 # install
 
-to install, first make a file "mkconfig" similar to your inferno's
-installation mkconfig (symlink/bind it).  now type "mk install" to
-compile and install.
+modify mkconfig if you don't have $ROOT set.  now type "mk install"
+to compile and install.
 
 when building from within inferno, insert SYSHOST=Inferno and ROOT=
 in the mk invocations to override the values in the mkconfig.
