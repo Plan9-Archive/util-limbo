@@ -406,6 +406,8 @@ gil(d: array of byte, o, n: int): (int, int)
 
 pbb(d: array of byte, o: int, v: big, n: int): int
 {
+	if(d == nil)
+		return o+n;
 	d = d[o:];
 	for(i := n-1; i >= 0; i--) {
 		d[i] = byte v;
@@ -416,6 +418,8 @@ pbb(d: array of byte, o: int, v: big, n: int): int
 
 pbl(d: array of byte, o: int, v: big, n: int): int
 {
+	if(d == nil)
+		return o+n;
 	d = d[o:];
 	for(i := 0; i < n; i++) {
 		d[i] = byte v;
@@ -426,6 +430,8 @@ pbl(d: array of byte, o: int, v: big, n: int): int
 
 pib(d: array of byte, o: int, v: int, n: int): int
 {
+	if(d == nil)
+		return o+n;
 	d = d[o:];
 	for(i := n-1; i >= 0; i--) {
 		d[i] = byte v;
@@ -436,6 +442,8 @@ pib(d: array of byte, o: int, v: int, n: int): int
 
 pil(d: array of byte, o: int, v: int, n: int): int
 {
+	if(d == nil)
+		return o+n;
 	d = d[o:];
 	for(i := 0; i < n; i++) {
 		d[i] = byte v;
